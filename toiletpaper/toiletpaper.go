@@ -1,6 +1,10 @@
 package toiletpaper
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/google/uuid"
+)
 
 type NameBrand struct {
 	Name string
@@ -11,6 +15,9 @@ func (nm NameBrand) Wipe() {
 }
 
 func GetRandomBrand() NameBrand {
-	// this isn't random
-	return Charmin()
+	if uuid.New()[0] == 0 {
+		return Charmin()
+
+	}
+	return Walmart()
 }
