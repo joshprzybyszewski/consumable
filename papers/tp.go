@@ -6,7 +6,7 @@ import (
 
 func TPSize(nb toiletpaper.NameBrand) (float64, int) {
 	switch nb {
-	case toiletpaper.Chamin():
+	case toiletpaper.Charmin():
 		return 5, 5
 	case toiletpaper.Walmart():
 		return 4, 4

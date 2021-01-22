@@ -1,5 +1,9 @@
 package papers
 
+import (
+	"github.com/joshprzybyszewski/consumers/lawoffice"
+)
+
 func LegalSize() (float64, int) {
-	return 8.5, 14
+	return lawoffice.LegalPaperWidth(), lawoffice.LegalPaperHeight()
 }
